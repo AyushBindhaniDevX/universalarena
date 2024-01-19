@@ -2,157 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universal Arena 2024</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: white;
-      background: url('bg3.png') no-repeat center center fixed;
-      background-size: cover;
-      background-color: black;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Arena 2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: url('bg3.png') no-repeat center center fixed;
+            background-size: cover;
+            background-color: black;
+        }
 
-    nav {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 1rem;
-      position: fixed;
-      width: 100%;
-      z-index: 2;
-    }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
 
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      transition: color 0.3s ease-in-out;
-    }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
 
-    nav a:hover {
-      color: #FF4081;
-    }
+        nav a:hover {
+            color: #FF4081;
+        }
 
-    .image-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      /* Adjust the height as needed */
-      overflow: hidden;
-    }
+        .content {
+            padding: 5rem;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s;
+            position: relative;
+            z-index: 1;
+        }
 
-    .full-width-image {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+        .full-width-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
 
-    .content {
-      padding: 5rem;
-      text-align: center;
-      opacity: 0;
-      animation: fadeIn 1s forwards;
-      animation-delay: 0.5s;
-      position: relative;
-      z-index: 1;
-    }
+        .section {
+            padding: 5rem;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s;
+        }
 
-    .cta-button {
-      background-color: #FF4081;
-      color: white;
-      text-decoration: none;
-      padding: 1.5rem 3rem;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background-color 0.3s ease-in-out;
-      display: inline-block;
-      margin-top: 1rem;
-    }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
 
-    .cta-button:hover {
-      background-color: #E91E63;
-    }
+            to {
+                opacity: 1;
+            }
+        }
 
-    .section {
-      padding: 5rem;
-      text-align: center;
-      opacity: 0;
-      animation: fadeIn 1s forwards;
-      animation-delay: 0.5s;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    .image-cell {
-      margin-right: 50px;
-      /* Adjust the margin as needed */
-    }
-  </style>
+        .image-cell {
+            margin-right: 50px;
+            /* Adjust the margin as needed */
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#join-the-crew">Join the Crew</a>
+      <a href="./contact/">Contact Us</a>
+      <a href="./t&c/">Terms and Conditions</a>
+      <a href="./pp/">Privacy Policy</a>
+      <a href="./rp/">Refund Policy</a>
+        <!--<a href="#csr">CSR</a>-->
+        <a href="#buy-passes">Buy Passes</a>
+    </nav>
 
-  <!-- Content -->
-  <div class="content">
+    <!-- Content -->
+    <div class="content">
+        <img src="main1.png" class="full-width-image" alt="Main Image">
+    </div>
 
-    <img src="main1.png" class="full-width-image"></img>
+    <!-- About Universal Arena Section -->
+    <section id="about" class="section">
+        <img src="gp83.png" class="full-width-image" alt="Image 1">
+        <img src="ua.png" class="full-width-image" alt="Image 2">
+    </section>
 
- 
+    <!-- Join the Crew Section -->
+    <section id="join-the-crew" class="section">
+        <img src="crew.png" class="full-width-image" alt="Image 3">
+        <img src="dept.png" class="full-width-image" alt="Image 4">
+    </section>
 
-    
-  </div>
+    <!-- 
+    <section id="csr" class="section">
+        <h2 class="text-3xl font-bold mb-4">Corporate Social Responsibility (CSR)</h2>
+    </section>-->
 
-  <!-- About Universal Arena Section -->
-  <section id="about" class="section">
-    <img src="gp83.png" class="full-width-image"></img>
-    <img src="ua.png" class="full-width-image"></img>
+    <!-- Buy Passes Section -->
+    <section id="buy-passes" class="section">
+        <a href="pass/" target="_blank">
+            <img src="eb.png" class="full-width-image" alt="Image 5">
+        </a>
+    </section>
 
-  </section>
-  <img src="th.png" class="full-width-image"></img>
+    <br>
+    <img src="140.png" class="full-width-image" alt="Image 6">
+    <br>
 
-  <!-- 
-  <section id="join-the-crew" class="section">
-    <img src="crew.png" class="full-width-image"></img>
-    <img src="dept.png" class="full-width-image"></img>
-  </section>-->
-
-  <!-- Corporate Social Responsibility (CSR) Section -->
-  <!--<section id="csr" class="section">
-    <h2 class="text-3xl font-bold mb-4">Corporate Social Responsibility (CSR)</h2>
-  </section>-->
-
-  <!-- Buy Passes Section -->
-  <section id="buy-passes" class="section">
-    <a href="pass/" target="blank">
-  <img src="eb.png" class="full-width-image"></img></a>
-  </section>
-
-  <script>
-    // Add scroll animations
-    document.addEventListener("scroll", () => {
-      const sections = document.querySelectorAll(".section");
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        const isVisible = (rect.top <= window.innerHeight / 1.5);
-        if (isVisible) {
-          section.style.animation = "fadeIn 1s forwards";
-        }
-      });
-    });
-  </script>
+    <script>
+        // Add scroll animations
+        document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll(".section");
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                const isVisible = (rect.top <= window.innerHeight / 1.5);
+                if (isVisible) {
+                    section.style.animation = "fadeIn 1s forwards";
+                }
+            });
+        });
+    </script>
 
 </body>
 
